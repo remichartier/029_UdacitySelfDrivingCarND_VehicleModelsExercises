@@ -46,7 +46,7 @@ int main() {
    */
   //double epsi = ? ;
   // derivative polynomial degree 1 
-  double epsi = psi - atan2(coeffs[1]);
+  double epsi = psi - atan(coeffs[1]);
 
   VectorXd state(6);
   state << x, y, psi, v, cte, epsi;
@@ -101,4 +101,5 @@ int main() {
   plt::plot(v_vals);
 
   plt::show();
+  
 }
